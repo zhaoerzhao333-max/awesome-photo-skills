@@ -1,0 +1,45 @@
+{
+  "generation_method": "built-in image_gen",
+  "status": "source_ready_transformations_blocked_429",
+  "attempt_date": "2026-10-15",
+  "source": {
+    "type": "ai_generated_fictional_photo",
+    "prompt": "prompts/source.md",
+    "image": "images/source.png",
+    "status": "generated_and_visually_reviewed",
+    "notes": "Cottage partially cropped at left; preserve actual source framing."
+  },
+  "examples": [
+    {
+      "id": "watercolor",
+      "title": "水彩旅行卡",
+      "skill": "watercolor-travel-card",
+      "upstream": "https://github.com/GZ-L/photo-to-poster-skills/blob/268ee78460ab5592167082d0501b7834f2e5b676/skills/watercolor-travel-card/SKILL.md",
+      "commit": "268ee78460ab5592167082d0501b7834f2e5b676",
+      "prompt": "prompts/watercolor.md",
+      "output": null,
+      "status": "attempt_failed_429"
+    },
+    {
+      "id": "papercraft",
+      "title": "纸雕微缩场景",
+      "skill": "papercraft-travel-diorama",
+      "upstream": "https://github.com/GZ-L/photo-to-poster-skills/blob/268ee78460ab5592167082d0501b7834f2e5b676/skills/papercraft-travel-diorama/SKILL.md",
+      "commit": "268ee78460ab5592167082d0501b7834f2e5b676",
+      "prompt": "prompts/papercraft.md",
+      "output": null,
+      "status": "attempt_failed_429"
+    },
+    {
+      "id": "pixel",
+      "title": "像素消散",
+      "skill": "pixel-dissolve-landscape",
+      "upstream": "https://github.com/GZ-L/photo-to-poster-skills/blob/268ee78460ab5592167082d0501b7834f2e5b676/skills/pixel-dissolve-landscape/SKILL.md",
+      "commit": "268ee78460ab5592167082d0501b7834f2e5b676",
+      "prompt": "prompts/pixel.md",
+      "output": null,
+      "status": "attempt_failed_429"
+    }
+  ],
+  "model": null
+}
