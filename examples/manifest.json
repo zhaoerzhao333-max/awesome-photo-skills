@@ -1,6 +1,6 @@
 {
   "generation_method": "built-in image_gen",
-  "status": "source_ready_transformations_blocked_429",
+  "status": "watercolor_ready_remaining_blocked_429",
   "attempt_date": "2026-10-15",
   "source": {
     "type": "ai_generated_fictional_photo",
@@ -17,8 +17,10 @@
       "upstream": "https://github.com/GZ-L/photo-to-poster-skills/blob/268ee78460ab5592167082d0501b7834f2e5b676/skills/watercolor-travel-card/SKILL.md",
       "commit": "268ee78460ab5592167082d0501b7834f2e5b676",
       "prompt": "prompts/watercolor.md",
-      "output": null,
-      "status": "attempt_failed_429"
+      "output": "images/watercolor.png",
+      "status": "generated_and_visually_reviewed",
+      "generated_date": "2026-10-15",
+      "review_notes": "Cottage, cypress and single boat retained. Archive column adds olive-branch decorations and a small landscape vignette; this is a stylistic interpretation, not exact scene preservation."
     },
     {
       "id": "papercraft",
@@ -68,6 +70,36 @@
           "http_status": 429,
           "output": null,
           "prompt": "prompts/pixel.md"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "method": "built-in image_gen",
+      "results": [
+        {
+          "id": "watercolor",
+          "status": "success",
+          "output": "images/watercolor.png"
+        },
+        {
+          "id": "papercraft",
+          "status": "failed",
+          "http_status": 429,
+          "output": null
+        },
+        {
+          "id": "pixel",
+          "status": "failed",
+          "http_status": 429,
+          "output": null
+        },
+        {
+          "id": "papercraft",
+          "status": "failed",
+          "http_status": 429,
+          "output": null,
+          "note": "Second sequential retry in the same run."
         }
       ]
     }

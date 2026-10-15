@@ -16,17 +16,21 @@ A curated collection of AI agent skills for turning photos into art.
 
 对比演示按 **同一张输入图 → 不同 Skill 的独立输出图** 组织，方便比较主体保留、材质和构图变化。
 
-本次计划先制作水彩旅行卡、纸雕微缩场景、像素消散三组对比。**共享输入图已生成，三种转换暂未成功**：参考图转换接口返回 429，当前没有可展示的前后对比结果。
+已完成 **水彩旅行卡** 对比。左右两图使用同一来源；原图也是 AI 生成的虚构场景，非实拍照片。纸雕与像素输出仍因生图服务 429 待重试。
 
-<a href="examples/images/source.png"><img src="examples/images/source.png" alt="AI 生成的虚构湖岸输入图：小屋、柏树与木船" width="320"></a>
+### 水彩旅行卡
 
-*共享输入图 · AI 生成的虚构场景，非实拍照片。*
+| 原图 · AI 生成输入 | 生成图 · 水彩旅行卡 |
+| :---: | :---: |
+| [<img src="examples/images/source.png" alt="原图：湖岸小屋、柏树与木船" width="420">](examples/images/source.png) | [<img src="examples/images/watercolor.png" alt="水彩生成图：湖岸场景与齿孔档案栏" width="420">](examples/images/watercolor.png) |
 
-| 演示方向 | 重点观察 | 准备状态 |
+保留了小屋、柏树与木船，转换为水彩纸面和侧边档案栏。右栏额外出现橄榄枝装饰与小幅风景插图，属于生成变化，并非原图事实。点击图片查看完整文件。
+
+| 演示方向 | 重点观察 | 状态 |
 | --- | --- | --- |
-| 水彩旅行卡 | 透明水彩、纸纹与侧边档案栏 | [提示词已准备](examples/prompts/watercolor.md)，转换待重试 |
-| 纸雕微缩场景 | 纸层厚度、立体空间与留白 | [提示词已准备](examples/prompts/papercraft.md)，转换待重试 |
-| 像素消散 | 主体识别、有限色阶与边缘消散 | [提示词已准备](examples/prompts/pixel.md)，转换待重试 |
+| 水彩旅行卡 | 透明水彩、纸纹与侧边档案栏 | 已生成 · [完整提示词](examples/prompts/watercolor.md) |
+| 纸雕微缩场景 | 纸层厚度、立体空间与留白 | 转换待重试 · [提示词](examples/prompts/papercraft.md) |
+| 像素消散 | 主体识别、有限色阶与边缘消散 | 转换待重试 · [提示词](examples/prompts/pixel.md) |
 
 [查看演示方案与来源记录 →](examples/README.md)
 
@@ -77,7 +81,7 @@ examples/
   README.md            对比演示方案、状态和素材规则
   manifest.json        来源、版本与生成状态
   prompts/             输入图与三种转换的提示词
-  images/              已生成的共享输入图
+  images/              共享输入图与已生成的风格输出
 ```
 
 ## 收录边界
