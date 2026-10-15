@@ -41,5 +41,35 @@
       "status": "attempt_failed_429"
     }
   ],
-  "model": null
+  "model": null,
+  "retry_runs": [
+    {
+      "date": "2026-10-15",
+      "method": "built-in image_gen",
+      "reference_image": "images/source.png",
+      "results": [
+        {
+          "id": "watercolor",
+          "status": "failed",
+          "http_status": 429,
+          "output": null,
+          "prompt": "prompts/watercolor.md"
+        },
+        {
+          "id": "papercraft",
+          "status": "failed",
+          "http_status": 429,
+          "output": null,
+          "prompt": "prompts/papercraft.md"
+        },
+        {
+          "id": "pixel",
+          "status": "failed",
+          "http_status": 429,
+          "output": null,
+          "prompt": "prompts/pixel.md"
+        }
+      ]
+    }
+  ]
 }
