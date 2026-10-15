@@ -1,0 +1,107 @@
+{
+  "generation_method": "built-in image_gen",
+  "status": "watercolor_ready_remaining_blocked_429",
+  "attempt_date": "2026-10-15",
+  "source": {
+    "type": "ai_generated_fictional_photo",
+    "prompt": "prompts/source.md",
+    "image": "images/source.png",
+    "status": "generated_and_visually_reviewed",
+    "notes": "Cottage partially cropped at left; preserve actual source framing."
+  },
+  "examples": [
+    {
+      "id": "watercolor",
+      "title": "水彩旅行卡",
+      "skill": "watercolor-travel-card",
+      "upstream": "https://github.com/GZ-L/photo-to-poster-skills/blob/268ee78460ab5592167082d0501b7834f2e5b676/skills/watercolor-travel-card/SKILL.md",
+      "commit": "268ee78460ab5592167082d0501b7834f2e5b676",
+      "prompt": "prompts/watercolor.md",
+      "output": "images/watercolor.png",
+      "status": "generated_and_visually_reviewed",
+      "generated_date": "2026-10-15",
+      "review_notes": "Cottage, cypress and single boat retained. Archive column adds olive-branch decorations and a small landscape vignette; this is a stylistic interpretation, not exact scene preservation."
+    },
+    {
+      "id": "papercraft",
+      "title": "纸雕微缩场景",
+      "skill": "papercraft-travel-diorama",
+      "upstream": "https://github.com/GZ-L/photo-to-poster-skills/blob/268ee78460ab5592167082d0501b7834f2e5b676/skills/papercraft-travel-diorama/SKILL.md",
+      "commit": "268ee78460ab5592167082d0501b7834f2e5b676",
+      "prompt": "prompts/papercraft.md",
+      "output": null,
+      "status": "attempt_failed_429"
+    },
+    {
+      "id": "pixel",
+      "title": "像素消散",
+      "skill": "pixel-dissolve-landscape",
+      "upstream": "https://github.com/GZ-L/photo-to-poster-skills/blob/268ee78460ab5592167082d0501b7834f2e5b676/skills/pixel-dissolve-landscape/SKILL.md",
+      "commit": "268ee78460ab5592167082d0501b7834f2e5b676",
+      "prompt": "prompts/pixel.md",
+      "output": null,
+      "status": "attempt_failed_429"
+    }
+  ],
+  "model": null,
+  "retry_runs": [
+    {
+      "date": "2026-10-15",
+      "method": "built-in image_gen",
+      "reference_image": "images/source.png",
+      "results": [
+        {
+          "id": "watercolor",
+          "status": "failed",
+          "http_status": 429,
+          "output": null,
+          "prompt": "prompts/watercolor.md"
+        },
+        {
+          "id": "papercraft",
+          "status": "failed",
+          "http_status": 429,
+          "output": null,
+          "prompt": "prompts/papercraft.md"
+        },
+        {
+          "id": "pixel",
+          "status": "failed",
+          "http_status": 429,
+          "output": null,
+          "prompt": "prompts/pixel.md"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "method": "built-in image_gen",
+      "results": [
+        {
+          "id": "watercolor",
+          "status": "success",
+          "output": "images/watercolor.png"
+        },
+        {
+          "id": "papercraft",
+          "status": "failed",
+          "http_status": 429,
+          "output": null
+        },
+        {
+          "id": "pixel",
+          "status": "failed",
+          "http_status": 429,
+          "output": null
+        },
+        {
+          "id": "papercraft",
+          "status": "failed",
+          "http_status": 429,
+          "output": null,
+          "note": "Second sequential retry in the same run."
+        }
+      ]
+    }
+  ]
+}
